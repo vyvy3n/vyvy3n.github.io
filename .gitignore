@@ -1,0 +1,10 @@
+# Personal info folder - do not commit
+personal_info/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*

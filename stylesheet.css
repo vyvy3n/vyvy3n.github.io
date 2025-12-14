@@ -1,0 +1,148 @@
+/* Google Fonts - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+.name {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 12px 0;
+}
+
+/* Links */
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f09228;
+}
+
+/* Paper Styles */
+.papertitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.paper-img {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.paper-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Highlighted papers */
+tr.highlight {
+  background-color: #ffffd0;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+  padding: 1px 4px;
+}
+
+/* Strong/Bold for author name */
+strong {
+  font-weight: 700;
+}
+
+/* Emphasis for venues */
+em {
+  font-style: italic;
+}
+
+/* Lists */
+ul {
+  line-height: 2;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Selection */
+::selection {
+  background: #1772d0;
+  color: white;
+}
+
+::-moz-selection {
+  background: #1772d0;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 32px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  table {
+    width: 100% !important;
+  }
+
+  td {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .paper-img {
+    margin: 0 auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12px;
+  }
+
+  a {
+    color: #000;
+  }
+
+  tr.highlight {
+    background-color: #f0f0f0;
+  }
+}
